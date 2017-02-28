@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 $a = 1;
 $b = "123";
 $c = 1.3;
@@ -6,40 +7,39 @@ $c = 1.3;
 
 $x = 12345;
 if (1217 + 116 == 1333) {
-	# Ö´ÐÐ´úÂëÓï¾ä¿é
+	# Ö´ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	print ("ok\n");
 }
 
-#!/usr/bin/perl
-
-# »»ÐÐ \n Î»ÓÚË«ÒýºÅÄÚ£¬ÓÐÐ§
-$str = "²ËÄñ½Ì³Ì  \nwww.runoob.com";
+# ï¿½ï¿½ï¿½ï¿½ \n Î»ï¿½ï¿½Ë«ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½Ð§
+$str = "ï¿½ï¿½ï¿½ï¿½Ì³ï¿½  \nwww.runoob.com";
 print "$str\n";
 
-# »»ÐÐ \n Î»ÓÚµ¥ÒýºÅÄÚ£¬ÎÞÐ§
-$str = '²ËÄñ½Ì³Ì  \nwww.runoob.com';
+# ï¿½ï¿½ï¿½ï¿½ \n Î»ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½Ð§
+$str = 'ï¿½ï¿½ï¿½ï¿½Ì³ï¿½  \nwww.runoob.com';
 print "$str\n";
 
-# Ö»ÓÐ R »á×ª»»Îª´óÐ´
+# Ö»ï¿½ï¿½ R ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½Ð´
 $str = "\urunoob";
 print "$str\n";
 
-# ËùÓÐµÄ×ÖÄ¸¶¼»á×ª»»Îª´óÐ´
+# ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½Ð´
 $str = "\Urunoob";
 print "$str\n";
 
-# Ö¸¶¨²¿·Ö»á×ª»»Îª´óÐ´
+# Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½×ªï¿½ï¿½Îªï¿½ï¿½Ð´
 $str = "Welcome to \Urunoob\E.com!"; 
 print "$str\n";
 
-# ½«µ½\EÎªÖ¹µÄ·Çµ¥´Ê£¨non-word£©×Ö·û¼ÓÉÏ·´Ð±Ïß
+# ï¿½ï¿½ï¿½ï¿½\EÎªÖ¹ï¿½Ä·Çµï¿½ï¿½Ê£ï¿½non-wordï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ï·ï¿½Ð±ï¿½ï¿½
 $str = "\QWelcome to runoob's family";
 print "$str\n";
 
 $var = <<"EOF";
-ÎÒÔÚÄÇÀï£¬ÎÒÊÇË¯£¬ÎÒÔÚ¸ÉÊ²Ã´¡£
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï£¬ï¿½ï¿½ï¿½ï¿½Ë¯ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½Ê²Ã´ï¿½ï¿½
 EOF
 print "$var";
+
 
 print "$var" . "str";
 $c = "$var" . "$str";
@@ -55,3 +55,106 @@ $martin = v77.97.114.116.105.110;
 print "smile = $smile\n";
 print "foo = $foo\n";
 print "martin = $martin\n";
+
+=pwd
+è¿™æ˜¯ä¸€ä¸ªä»€ä¹ˆä¸œè¥¿å‘¢ï¼Œè¿™æ˜¯ä¸€ä¸ªå¤šè¡Œæ³¨é‡Š
+=cut
+
+@arr = (12, 34, 56);
+print "$arr[1]\n";
+
+@arr = (1, 2, "jflafj");
+print "$arr[2]";
+@arr = qw/1 2 "dfjf" "afj"/;
+print "@arr\n";
+$arr[1] = 5;
+print "@arr";
+
+print "$arr[-1]";
+
+@onetoten = (1..10);
+print "@onetoten";
+$onetoten = @onetoten;
+print "$onetoten";
+print "$#onetoten";
+
+@sites = ("google", "runoob", "taobao");
+print "1. \@sites = @sites\n";
+
+push(@sites, "baidu");
+print "2. \@sites = @sites\n";
+#åœ¨æ•°ç»„å‰æ’å…¥
+unshift(@sites, "weibo");
+print "3. \@sites = @sites\n";
+pop(@sites);
+print "4. \@sites = @sites\n";
+shift(@sites);
+print "5. \@sites = @sites\n";
+
+@sites = qw/google taobao runoob weibo qq facebook ç½‘æ˜“/;
+@site2 = @sites[3, 4, 5];
+print "@site2\n";
+@site2 = @sites[3..5];
+print "@site2\n";
+@nums = (1..20);
+print "before - @nums\n";
+splice(@nums, 5, 5, 21..25);
+print "after - @nums\n";
+
+@arr = split("-", "www-runoob-com", 2);
+print "@arr\n";
+
+$joinStr = join("-", @arr);
+print "$joinStr\n";
+
+@sites = qw(google taobao runoob facebook);
+print "before - @sites \n";
+@sites = sort(@sites);
+print "after - @sites \n";
+
+# $[ä¸ºåºŸå¼ƒå˜é‡
+print "$[\n";
+#$[ = 1;
+print "$sites[2]\n";
+
+@arr1 = (1, 2, 3);
+@arr2 = (4, 5, 6);
+@numbers = (@arr1, @arr2);
+print "@numbers\n";
+
+@list = (1, 2, 3, 4, 5)[1..2];
+print "@list\n";
+
+#hash
+%data = ('google', 'google.com', 'baidu', 'baidu.com');
+print "$data{'google'}";
+%data = ('google' => 'google.com', 'baidu' => 'baidu.com', 'laji' => 'laji.com');
+print "%data\n";
+%data = (-google => 'google.com', -taobao => 'taobao.com');
+print "$data{-google}";
+print "@data{-google, -taobao}\n";
+@names = keys(%data);
+@names = keys %data;
+print "@names\n";
+
+@values = values %data;
+@values = values(%data);
+print "@values\n";
+
+if(exists($data{-facebook})) {
+	print "facebook ------- $data{-facebook}\n";
+}else {
+	print "facebook not exists\n";
+}
+
+$size = @names;
+print "$size\n";
+
+$data{-facebook} = 'facebook.com';
+@names = keys(%data);
+print "@names\n";
+
+delete $data{-facebook};
+@names = keys(%data);
+print "@names\n";
+
