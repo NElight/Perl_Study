@@ -36,7 +36,7 @@ $str = "\QWelcome to runoob's family";
 print "$str\n";
 
 $var = <<"EOF";
-�����������˯�����ڸ�ʲô��
+
 EOF
 print "$var";
 
