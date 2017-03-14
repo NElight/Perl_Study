@@ -20,8 +20,15 @@ $salary
 ================================
 .
 
+format EMPLOYEE_TOP = 
+==========================
+NAME                   AGE
+==========================
+.
 select(STDOUT);
 $~ = EMPLOYEE;
+$^ = EMPLOYEE_TOP;
+
 @n = ("Ali", "Runoob", "Jaffer");
 @a = (20, 30, 40);
 @s = (2000.00, 2500.00, 4000.000);
@@ -43,7 +50,8 @@ format MYFORMAT =
 .
 write;
 
-write;
+
+
 
 
 
