@@ -1,5 +1,8 @@
 #！/usr/bin/perl
 
+use PadWalker qw(peek_my peek_our peek_sub closed_over);
+
+
 $a = localtime();
 print "$a \n";
 
