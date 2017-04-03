@@ -104,6 +104,9 @@ $| = 1;# 不要将LOG内容保存到缓冲区
 select STDOUT;
 print LOG "this gets written to the LOG at once\n";
 
+if(! open STDERR, ">>", "/home/barney/.error.log") {
+	die "Can not open error log for append:$!";
+}
 
 
 
