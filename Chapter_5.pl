@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 use strict;
 use feature qw/state/;
-use autodie;
+#use autodie;
 
 while(defined($line = <STDIN>)) {
 	pritn "i saw $line";
