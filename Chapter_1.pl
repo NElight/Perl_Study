@@ -37,4 +37,8 @@ print "-------\n";
 print $str1;
 print "-------\n";
 
+$_ = "ATCAAG";
+$n = tr/AT/TA/;
+print "-----------------" . $n . $_;
+
 

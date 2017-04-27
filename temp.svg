@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="500" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<circle cx="250" cy="250" fill="red" id="this is a circle" r="150" />
+	<!-- 
+	Generated using the Perl SVG Module V2.69
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>
